@@ -1,0 +1,136 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        style="@style/SettingItemTop"
+        android:background="@drawable/setting_list_top"
+    	android:layout_width="match_parent"
+    	android:layout_height="wrap_content" 
+    	android:orientation="horizontal">
+
+	     <TextView
+	         style="@style/MySettingText"
+	         android:layout_width="wrap_content"
+	         android:layout_height="wrap_content"
+	         android:text="开启声音" />
+
+	    <CheckBox
+	        android:id="@+id/chkVoice"
+	        style="@style/MyCheckBox"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/SettingItemMiddle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="@style/MySettingText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="开启震动" />
+
+        <CheckBox
+            android:id="@+id/chkShake"
+            style="@style/MyCheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/SettingItemMiddle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="@style/MySettingText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.55"
+            android:text="提示步数" />
+
+        <Spinner
+            android:id="@+id/spinner1"
+            android:layout_width="77dp"
+            android:layout_height="58dp"
+            android:prompt="@string/step_prompt" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lltCustomLayout"
+        style="@style/SettingItemMiddle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+	    <TextView
+	        style="@style/MySettingText"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="自定义布局" />
+
+	    <CheckBox
+	        style="@style/MyCheckBox"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:visibility="invisible" />
+
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/lltUpgrade"
+        style="@style/SettingItemMiddle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+	    <TextView
+	        style="@style/MySettingText"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="开启震动" />
+
+	    <CheckBox
+	        style="@style/MyCheckBox"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:visibility="invisible" />
+
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/lltAbout"
+        style="@style/SettingItemBottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="@style/MySettingText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="关于" />
+
+        <CheckBox
+            style="@style/MyCheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="invisible" />
+
+    </LinearLayout>
+    
+</LinearLayout>
+
+

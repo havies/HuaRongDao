@@ -1,0 +1,91 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/abl_ChessMain"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back" >
+
+    <edu.bjfu.klotski.UI.GameView
+        android:id="@+id/cm_GameView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/rlToolBar"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/tvCurrentStep"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp" />
+
+    <RelativeLayout
+        android:id="@+id/rlToolBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_vertical" >
+
+        <Button
+            android:id="@+id/btnRefresh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="false"
+            android:layout_centerVertical="true"
+            android:background="@drawable/btn_refresh" />
+
+        <Button
+            android:id="@+id/btnBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/btnRefresh"
+            android:background="@drawable/btn_backward"
+            android:paddingLeft="5dp" />
+
+        <Button
+            android:id="@+id/btnPlay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/btnBack"
+            android:background="@drawable/btn_play"
+            android:paddingLeft="5dp" />
+
+        <Button
+            android:id="@+id/btnPre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/btnPlay"
+            android:background="@drawable/btn_forward"
+            android:paddingLeft="5dp" />
+
+        <Button
+            android:id="@+id/btnHelp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/btnPre"
+            android:background="@drawable/btn_solution"
+            android:paddingLeft="5dp" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tvMinSteps"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/cm_GameView"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="20dp"
+        android:text="最少步数：000"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/tvCurrentStep"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tvMinSteps"
+        android:layout_below="@+id/tvMinSteps"
+        android:text="当前步数：000"
+        android:textSize="15sp" />
+
+</RelativeLayout>

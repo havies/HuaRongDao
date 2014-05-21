@@ -1,0 +1,54 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="68dp"
+        android:gravity="center_vertical|center_horizontal" >
+
+        <Button
+            android:id="@+id/btn_main_setting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="106dp"
+            android:background="@drawable/bt_selector"
+            android:text="游戏设置" />
+
+        <Button
+            android:id="@+id/btn_main_start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/bt_selector"
+            android:text="开始游戏" />
+
+        <Button
+            android:id="@+id/btn_main_about"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/btn_main_setting"
+            android:layout_marginTop="26dp"
+            android:background="@drawable/bt_selector"
+            android:text="关于游戏" />
+
+        <Button
+            android:id="@+id/btn_main_quit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/btn_main_about"
+            android:layout_marginTop="37dp"
+            android:background="@drawable/bt_selector"
+            android:text="退出游戏" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

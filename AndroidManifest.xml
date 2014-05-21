@@ -1,0 +1,71 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="edu.bjfu.klotski"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="15" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.VIBRATE" />  
+    <application
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.NoTitleBar">
+        <activity
+            android:name=".KlotskiMainActivity"
+            android:label="@string/title_activity_klotski" 
+             android:screenOrientation="portrait" >
+
+        </activity>
+        <activity
+            android:name=".SelectSectionActivity"
+            android:label="@string/title_activity_select_section" 
+             android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".SelectLevelActivity"
+            android:label="@string/title_activity_select_level" 
+             android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".GameActivity"
+            android:label="@string/title_activity_klotski"
+             android:screenOrientation="portrait"  >
+        </activity>
+        <activity
+            android:name=".ConfigActivity"
+            android:label="@string/title_activity_config"
+             android:screenOrientation="portrait"  >
+        </activity>
+        <activity
+            android:name=".LayoutManageActivity"
+            android:label="@string/title_activity_layout_manage" 
+             android:screenOrientation="portrait" >
+
+        </activity>
+        <activity
+            android:name=".SetLayoutActivity"
+            android:label="@string/title_activity_set_layout" 
+             android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".ChessMainActivity"
+            android:label="@string/title_activity_chess_main"
+             android:screenOrientation="portrait"  >
+             
+        </activity>
+        
+        <activity
+            android:name=".Klotski"
+            android:label="@string/title_activity_chess_main"
+             android:screenOrientation="portrait"  >
+                        <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

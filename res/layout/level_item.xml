@@ -1,0 +1,16 @@
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/al_level_item"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <TextView
+        android:id="@+id/tv_level_number"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_x="5dp"
+        android:layout_y="6dp"
+        android:background="@drawable/level_item_close"
+        android:gravity="center_horizontal|center_vertical"
+        android:textSize="60sp" />
+
+</AbsoluteLayout>

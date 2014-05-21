@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/popupChess"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:drawable/screen_background_light"
+    android:gravity="center_vertical"
+    android:orientation="horizontal" >
+
+
+
+
+
+    <ListView
+        android:id="@+id/lvChesses"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+        android:background="@drawable/detail_dialog" >
+
+    </ListView>
+
+</LinearLayout>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="14dp"
+        android:text="关于游戏"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView1"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="21dp"
+        android:text="华容道游戏源于《三国演义》的“诸葛亮智算华容，关云长义释曹操”。游戏将十个棋子分为四种不同类型，以表示曹操、关羽、黄忠、赵云、马超、张飞和士、卒、兵、勇。棋子放置于长宽比为5：4的棋盘上，棋盘底部的出口代表华容道。华容道游戏有多种不同的布局，如“横刀立马”，“小燕出巢”，“前呼后拥”，“近在咫尺”等。布局设置中，五虎上将（关羽、张飞、马超、黄忠、赵云）这五个棋子可以横放或竖放，横放的棋子称之为“横将”，竖放的棋子称之为“竖将”，根据横将的不同，布局亦可分为：一横式、二横式、三横式、四横式、五横式" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView2"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="16dp"
+        android:text="游戏规则是：不允许跨越任可一个棋子，通过棋子的移动，以尽可能少的步骤，使曹操（最大的棋子）移动到出口位置。" />
+
+</RelativeLayout>
